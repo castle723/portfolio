@@ -1,5 +1,5 @@
 //@ts-ignore
-import profile from '../public/Jacob_dutton.jpg'
+import profile from '../public/Jacob_Dutton.jpg'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 
