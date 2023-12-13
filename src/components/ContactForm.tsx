@@ -5,7 +5,7 @@ import Input from "./Input"
 import { useForm } from 'react-hook-form'
 import { server_calls } from "../api/server"
 import { useDispatch, useStore } from "react-redux"
-import { chooseFirst, chooseLast, chooseEmail, choosePhone } from "../redux/slices/RootSlice"
+import { chooseFirst, chooseLast, chooseEmail, choosePhone, chooseCompany } from "../redux/slices/RootSlice"
 
 interface ContactFormProps {
   id?: string[];
@@ -30,7 +30,8 @@ const ContactForm = ( props:ContactFormProps) => {
       dispatch(chooseLast(data.last));
       dispatch(chooseEmail(data.email));
       dispatch(choosePhone(data.phone_number));
-
+      dispatch(chooseCompany(data.company));
+      
       server_calls.create(store.getState())
       setTimeout(() => {window.location.reload()}, 1000);
       event.target.reset()
