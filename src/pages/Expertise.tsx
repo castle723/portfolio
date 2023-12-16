@@ -74,7 +74,7 @@ function Expertise() {
           </div>
           </div>
         <h2 className=' mb-10 mt-10 text-lg underline'>My Past Projects</h2>
-        <div className='grid grid-cols-3 gap-16 place-content-center'>
+        <div className='grid grid-cols-3 mb-16 gap-16 place-content-center'>
            <div>
            <img src={firstProject} alt='Photo of my first Project'/>
             <Button>
