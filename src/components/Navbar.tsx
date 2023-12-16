@@ -18,7 +18,7 @@ function Navbar() {
             <div className='flex flex-row'>
                 <Button className='mr-4'>
                     <div className='flex items-center px-2.5 py-1 border rounded border-green-400 text-green-500'>
-                        <Link to='https://docs.google.com/document/d/1Tw3fCTHBuxQ_-e3gB8ZEhnsdZAokagenbrLVEuvQT_E/edit?usp=sharing' className='font-mono font-thin text-xl tracking-tight'><i className="fa-solid fa-file"></i></Link>
+                        <Link to='https://docs.google.com/document/d/1Tw3fCTHBuxQ_-e3gB8ZEhnsdZAokagenbrLVEuvQT_E/edit?usp=sharing' target="_blank" rel="noopener noreferrer" className='font-mono font-thin text-xl tracking-tight'><i className="fa-solid fa-file"></i></Link>
                     </div>
                 </Button>
                 <div className='block'>
